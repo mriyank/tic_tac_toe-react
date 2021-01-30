@@ -2,7 +2,7 @@ import React from "react";
 import Grid from "./Grid";
 import "./App.css";
 import PlayerInfo from './PlayerInfo';
-import styles from "./grid.module.css";
+import FolkMe from './Folkme';
 
 
 export default function App(props) {
@@ -19,6 +19,7 @@ console.log(data)
 
   return (
     <>
+    
     <Grid
     winningIndexes = {data.winner.indexes}
       positions={data.positions}
@@ -60,6 +61,11 @@ console.log(data)
   
     <PlayerInfo  turn = {data.turn} winner={data.winner.name} ></PlayerInfo>
 
+    <FolkMe
+          
+          size="120px"
+          ariaLabel="View source on Github"
+        />
 
     </>
   );

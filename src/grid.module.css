@@ -1,0 +1,21 @@
+.container {
+  display: grid;
+  grid: 85px 85px 85px / 85px 85px 85px;
+  gap: 5px;
+  margin: 50px auto;
+  background-color: rgb(46, 36, 36);
+  width: calc(3 * 85px + 2 * 5px);
+  height: calc(3 * 85px + 2 * 5px);
+}
+
+.container > div {
+  background-color: rgb(255, 255, 255);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+
+.winner {
+  background-color: rebeccapurple !important;
+}

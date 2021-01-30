@@ -2,6 +2,7 @@ import React from "react";
 import Grid from "./Grid";
 import "./App.css";
 import PlayerInfo from './PlayerInfo';
+import styles from "./grid.module.css";
 
 
 export default function App(props) {
@@ -52,11 +53,14 @@ console.log(data)
          else {
            return prevData
          }
-          
+
         });
       }}
     />
-    <PlayerInfo turn = {data.turn} winner={data.winner.name} ></PlayerInfo>
+  
+    <PlayerInfo  turn = {data.turn} winner={data.winner.name} ></PlayerInfo>
+
+
     </>
   );
 }

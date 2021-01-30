@@ -6,6 +6,10 @@
   background-color: rgb(46, 36, 36);
   width: calc(3 * 85px + 2 * 5px);
   height: calc(3 * 85px + 2 * 5px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.679);
+  transition: 0.3s;
+  /* border: 13px solid rgb(242, 166, 27); */
+  border-radius: 1px;
 }
 
 .container > div {
@@ -17,5 +21,95 @@
 
 
 .winner {
-  background-color: rebeccapurple !important;
+  /* background-color: rgb(67, 240, 194) !important; */
+  background: linear-gradient(216deg, #26c89f, #26c5df, #995ff9);
+    background-size: 600% 600%;
+
+    -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:71% 0%}
+    50%{background-position:30% 100%}
+    100%{background-position:71% 0%}
+}
+
+
+
+/* #root > div:nth-child(2) > h2:nth-child(1) {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 100%;
+  align-content: center;
+  align-self: center;
+  padding: 30px;
+  text-align: center;
+ }
+
+  */
+/* 
+  h2{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    align-content: center;
+    align-self: center;
+    padding: 30px;
+    text-align: center;
+  } */
+
+
+/* Element | http://localhost:3000/ */
+
+h2 {
+  width: 15rem;
+  align-content: center;
+  margin: auto;
+  width: 50%;
+  border: 13px solid rgb(2, 154, 242);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  color: rgb(0, 0, 0);
+  
+}
+
+
+h1 {
+  width: 15rem;
+  align-content: center;
+  margin: auto;
+  width: 50%;
+  border: 13px solid rgb(2, 154, 242);
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  background: linear-gradient(216deg, #26c89f, #26c5df, #995ff9);
+  background-size: 600% 600%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+  -moz-animation: AnimationName 5s ease infinite;
+  animation: AnimationName 5s ease infinite;
+  
+  
+}
+body{
+  background-color: #ffffff;
 }
